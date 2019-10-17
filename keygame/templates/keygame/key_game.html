@@ -5,8 +5,15 @@
     <title>Key Game</title>
 </head>
 <body>
-<form method="post" action="game.html">
+<form method="post" action="">
     <input type="number" id="key_value" name="key_value" min="0" max="9">
+    <input type="submit" value="決定">
+    {% csrf_token %}
 </form>
+   {% if right %}
+    <p>正解！{{right}}</p>
+    {% else %}
+    <p>はずれ!</p>
+    {% endif %}
 </body>
 </html>
