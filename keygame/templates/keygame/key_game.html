@@ -6,14 +6,25 @@
 </head>
 <body>
 <form method="post" action="">
-    <input type="number" id="key_value" name="key_value" min="0" max="9">
+
+    右に<input type="radio"  name="right_or_left" value="right" checked>
+    左に<input type="radio"  name="right_or_left" value="left">
+    <input type="number" id="key_value" name="key_value"  min="0" max="9">まで回す
+
     <input type="submit" value="決定">
     {% csrf_token %}
 </form>
-   {% if right %}
-    <p>正解！{{right}}</p>
-    {% else %}
-    <p>はずれ!</p>
+    {% if right %}
+        <p>正解！{{right}}</p>
+    {% elif near %}
+        <p>途中で音がした気がした</p>
+    {% elif miss %}
+        <p>はずれ!</p>
     {% endif %}
+
+ <form method="get" action="">
+            <input type="submit" value="初めから">
+        </form>
+        <p>あと{{play_limit}}回</p>
 </body>
 </html>
