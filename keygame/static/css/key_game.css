@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: aliceblue;
+}
+#header{
+    background: aliceblue;
+}
+.btn-circle-fishy {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
+  transition: .4s;
+}
+
+.btn-circle-fishy:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.key_game{
+    margin: 0px 100px 0px 100px;
+    background: cornflowerblue;
+    border: double;
+    overflow: hidden;
+}
+#menu{
+    height: 100px;
+    width: 450px;
+    float: left;
+    border: double;
+    background: white;
+}
+#locker_inner{
+    margin: 0px 26px 26px 0px;
+    float: right;
+    background: white;
+    border: double;
+    height: 700px;
+    width: 700px;
+}
+#dial{
+    margin: auto;
+    transition: .4s;
+}
+#dial:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+#result{
+    float: left;
+    border: double;
+    background: white;
+    height: 50px;
+    width: 450px;
+}
