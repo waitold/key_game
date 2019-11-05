@@ -8,35 +8,51 @@
 <body>
 <div id="header"><h1>ダイアルゲーム</h1></div>
 <div class="key_game">
-    <div id="menu">
-        <form method="post" action="" id="key_input">
+    <div class="io">
+        <div id="menu">
+            <form method="post" action="" id="key_input">
+                <div class="radio">
+                    {% if dir == 'left' %}
+                        <input type="radio"  name="right_or_left" id="left" value="left" checked>
+                        <label for="left" id="left_label">左に</label>
+                        <input type="radio"  name="right_or_left" id="right" value="right">
+                        <label for="right" id="right_label">右に</label>
+                    {% else %}
+                        <input type="radio"  name="right_or_left" id="left" value="left" >
+                        <label for="left" id="left_label">左に</label>
+                        <input type="radio"  name="right_or_left" id="right" value="right" checked>
+                        <label for="right" id="right_label">右に</label>
+                    {% endif %}
 
-            右に<input type="radio"  name="right_or_left" value="right" checked>
-            左に<input type="radio"  name="right_or_left" value="left">
-            <input type="number" id="key_value" name="key_value" value={{top}}  min="0" max="9">まで回す
+                </div>
+                <input type="number" id="key_value" name="key_value" value={{top}}  min="0" max="9">まで回す
 
-            <input type="submit" value="回す" class="btn-circle-fishy">
-            {% csrf_token %}
-        </form>
-        <form method="get" action="init/" id="init">
-            <input type="submit" value="初めから">
-        </form>
+                <input type="submit" value="回す" class="btn-circle-fishy">
+                {% csrf_token %}
+            </form>
+            <form method="get" action="init/">
+                <input type="submit" id="init" value="初めから">
+            </form>
+        </div>
+        <div id="result">
+            {% if correct %}
+                <p>正解！{{right}}</p>
+            {% elif near %}
+                <p>途中で音がした気がした</p>
+                <p>あと{{play_limit}}回</p>
+            {% elif miss %}
+                <p>違う番号みたいだ</p>
+                <p>あと{{play_limit}}回</p>
+            {% endif %}
+        </div>
     </div>
     <div id="locker_inner">
         {% if top is not None %}
             <img src=/static/img/{{top}}.png id="dial" height="583" width="583">
+        {% elif correct %}
+            <img src="/static/img/tanni.png">
         {% endif %}
-    </div>
-        <div id="result">
-        {% if correct %}
-            <p>正解！{{right}}</p>
-        {% elif near %}
-            <p>途中で音がした気がした</p>
-            <p>あと{{play_limit}}回</p>
-        {% elif miss %}
-            <p>違う番号みたいだ</p>
-            <p>あと{{play_limit}}回</p>
-        {% endif %}
+
     </div>
 </div>
 </body>

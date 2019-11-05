@@ -20,31 +20,97 @@ body{
   background-image: linear-gradient(45deg, #709dff 0%, #91fdb7 100%);
   transition: .4s;
 }
-
 .btn-circle-fishy:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 .key_game{
-    margin: 0px 100px 0px 100px;
+    margin: auto;
+    height: 700px;
+    width: 1200px;
     background: cornflowerblue;
     border: double;
     overflow: hidden;
 }
+.io{
+    margin: 50px 50px;
+    width: 450px;
+    float: left;
+}
 #menu{
-    height: 100px;
     width: 450px;
     float: left;
     border: double;
     background: white;
 }
+.radio input{
+    display: none;
+}
+.radio label{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: solid 2px chartreuse;
+    border-radius: 50%;
+    text-align: center;
+    overflow: hidden;
+    transition: 4s;
+}
+.radio input[type="radio"]:checked + label {
+	background-color: forestgreen;
+	color: #fff;
+}
+.radio label{
+    transition: 2s;
+}
+#left_label{
+    transition: 2s;
+}
+#left_label:hover{
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+}
+#right_label{
+    transition: 2s;
+}
+#right_label:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+#key_value{
+    width: 30px;
+    border-radius: 4px;
+}
+
+
+#init input{
+    display: none;
+}
+#init {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: ghostwhite;
+  border: solid 2px ghostwhite;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+#init:hover {
+  background: black;
+  color: white;
+}
 #locker_inner{
-    margin: 0px 26px 26px 0px;
+    margin:50px 20px;
     float: right;
     background: white;
     border: double;
-    height: 700px;
-    width: 700px;
+    height: 600px;
+    width: 600px;
 }
 #dial{
     margin: auto;
@@ -54,10 +120,12 @@ body{
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+
 #result{
+    font-family: 'Impact';
     float: left;
     border: double;
     background: white;
-    height: 50px;
+    height: 100px;
     width: 450px;
 }
