@@ -56,9 +56,9 @@ def key_game(request):
 def rotate_dial(top, target, direction):
     if direction == "right":
         if top - target <= 0:
-            return list(map(lambda num: num % 10, list(range(top+9, target+1, -1))))
+            return list(map(lambda num: num % 10, list(range(top+9, target, -1))))
         else:
-            return list(range(top, target+1, -1))
+            return list(range(top-1, target, -1))
 
     elif direction == "left":
         if target - top <= 0:

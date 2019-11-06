@@ -41,6 +41,7 @@ body{
     width: 450px;
     float: left;
     border: double;
+    border-radius: 10px;
     background: white;
 }
 .radio input{
@@ -109,12 +110,13 @@ body{
     float: right;
     background: white;
     border: double;
+    border-radius: 20px;
     height: 600px;
     width: 600px;
 }
 #dial{
     margin: auto;
-    transition: .4s;
+    transition: 8s;
 }
 #dial:hover{
     -webkit-transform: rotate(360deg);
@@ -124,7 +126,9 @@ body{
 #result{
     font-family: 'Impact';
     float: left;
+    margin: 30px 0 0 0;
     border: double;
+    border-radius: 10px;
     background: white;
     height: 100px;
     width: 450px;
