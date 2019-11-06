@@ -8,7 +8,7 @@
 <body>
 <div id="header"><h1>ダイアルゲーム</h1></div>
 <div class="key_game">
-    <div class="io">
+    <div class="LeftUI">
         <div id="menu">
             <form method="post" action="" id="key_input">
                 <div class="radio">
@@ -43,7 +43,32 @@
             {% elif miss %}
                 <p>違う番号みたいだ</p>
                 <p>あと{{play_limit}}回</p>
+            {% elif game_over %}
+                <p>Game Over!</p>
+                <p>
+                    あなたは単位を失ってしまった。
+                </p>
+            {% else %}
+                <p>
+                    大切な単位を入れた金庫の鍵番号を忘れてしまった！！<br>
+                    どうにかして開けることはできないだろうか…
+                </p>
             {% endif %}
+        </div>
+        <div class="tutorial">
+            <h2>チュートリアル</h2>
+            <p>
+                このゲームは限られた回数の中で定めれらた鍵番号を当てるゲームで
+                向きと数字によって答えが決まっています。<br>
+                [答例] 左向きに6まで回す<br><br>
+            </p>
+            <h2>ヒント</h2>
+            <p>
+                例として一番上が0の場合右向きに5まで回すを選択した場合[9,8,7,6]を通過し、
+                5までダイアルが回されます。この時通過した番号の中に答えが含まれる場合、
+                音がしたというメッセージが表示されます。<br>
+                これをヒントとして正解にたどり着いてください。
+            </p>
         </div>
     </div>
     <div id="locker_inner">
@@ -51,6 +76,8 @@
             <img src=/static/img/{{top}}.png id="dial" height="583" width="583">
         {% elif correct %}
             <img src="/static/img/tanni.png">
+        {% elif game_over %}
+            <img src="/static/img/GameOver.png">
         {% endif %}
 
     </div>

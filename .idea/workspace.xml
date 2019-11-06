@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2b1bc19-4f15-40b0-ad68-18d3641fafa7" name="Default Changelist" comment="" />
+    <list default="true" id="d2b1bc19-4f15-40b0-ad68-18d3641fafa7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/keygame/static/img/GameOver.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keygame/static/css/key_game.css" beforeDir="false" afterPath="$PROJECT_DIR$/keygame/static/css/key_game.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keygame/templates/keygame/key_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/keygame/templates/keygame/key_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keygame/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/keygame/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,20 +24,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keygame/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="420">
+              <caret line="58" column="76" selection-start-line="58" selection-start-column="76" selection-end-line="58" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/keygame/templates/keygame/game.html">
+        <entry file="file://$PROJECT_DIR$/keygame/templates/keygame/key_game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="8" column="73" lean-forward="true" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
+            <state relative-caret-position="355">
+              <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -48,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            <state relative-caret-position="400">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding>
                 <element signature="e#630#662#0" expanded="true" />
               </folding>
@@ -79,6 +82,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -92,8 +98,10 @@
         <option value="$PROJECT_DIR$/mysite/urls.py" />
         <option value="$PROJECT_DIR$/keygame/urls.py" />
         <option value="$PROJECT_DIR$/keygame/templates/keygame/key_init.html" />
-        <option value="$PROJECT_DIR$/keygame/views.py" />
         <option value="$PROJECT_DIR$/keygame/templates/keygame/game.html" />
+        <option value="$PROJECT_DIR$/keygame/static/css/key_game.css" />
+        <option value="$PROJECT_DIR$/keygame/views.py" />
+        <option value="$PROJECT_DIR$/keygame/templates/keygame/key_game.html" />
       </list>
     </option>
   </component>
@@ -108,25 +116,70 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="django_practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_practice" type="462c0819:PsiDirectoryNode" />
+              <item name="key_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="key_game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="key_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="key_game" type="462c0819:PsiDirectoryNode" />
+              <item name="keygame" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="key_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="key_game" type="462c0819:PsiDirectoryNode" />
+              <item name="keygame" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="key_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="key_game" type="462c0819:PsiDirectoryNode" />
+              <item name="keygame" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="key_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="key_game" type="462c0819:PsiDirectoryNode" />
+              <item name="keygame" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="key_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="key_game" type="462c0819:PsiDirectoryNode" />
+              <item name="keygame" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="key_game" type="b2602c69:ProjectViewProjectNode" />
+              <item name="key_game" type="462c0819:PsiDirectoryNode" />
+              <item name="keygame" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="keygame" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chakk\code\python\key_game\keygame\static\img" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -154,16 +207,18 @@
       <workItem from="1569974477157" duration="7638000" />
       <workItem from="1570166806196" duration="6787000" />
       <workItem from="1570665904373" duration="5164000" />
+      <workItem from="1572999014912" duration="2345000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22316000" />
+    <option name="totallyTimeSpent" value="24661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12801608" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12868632" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -177,7 +232,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3266399" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3266399" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32931727" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -186,7 +241,7 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1266756" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12935656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -274,6 +329,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/keygame/templates/keygame/game.html" />
+    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="e#630#662#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keygame/static/css/key_game.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="133" column="20" selection-start-line="133" selection-start-column="20" selection-end-line="133" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/keygame/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -289,21 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/keygame/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding>
-            <element signature="e#630#662#0" expanded="true" />
-          </folding>
+          <caret line="58" column="76" selection-start-line="58" selection-start-column="76" selection-end-line="58" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -314,10 +374,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keygame/templates/keygame/game.html">
+    <entry file="file://$PROJECT_DIR$/keygame/templates/keygame/key_game.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="73" lean-forward="true" selection-start-line="8" selection-start-column="73" selection-end-line="8" selection-end-column="73" />
+        <state relative-caret-position="355">
+          <caret line="79" column="48" selection-start-line="79" selection-start-column="48" selection-end-line="79" selection-end-column="48" />
         </state>
       </provider>
     </entry>

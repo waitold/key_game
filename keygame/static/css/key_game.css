@@ -32,7 +32,7 @@ body{
     border: double;
     overflow: hidden;
 }
-.io{
+.LeftUI{
     margin: 50px 50px;
     width: 450px;
     float: left;
@@ -128,4 +128,8 @@ body{
     background: white;
     height: 100px;
     width: 450px;
+}
+
+.tutorial{
+    text-align: left;
 }
